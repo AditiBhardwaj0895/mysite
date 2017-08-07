@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+ +{% load cloudinary %}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+     <title>Smart Blog</title>
+
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <script src="https://use.fontawesome.com/baacfa72b9.js"></script>
+     <style>
+         .phone{
+         height:105%;
+         width:105%;
+         margin-top:30px;
+         }
+         .text{
+         font-family: 'Shrikhand', cursive;
+         color:#436ea5;
+         }
+          #me {
+             -webkit-animation: rotation 15s infinite linear;
+         }
+
+         @-webkit-keyframes rotation {
+             from {-webkit-transform: rotate(0deg);}
+             to   {-webkit-transform: rotate(359deg);}
+         }
+          .text2{
+         font-family: 'Lobster', cursive;
+         color:white;
+         font-size:45px;
+         margin-top:10px;
+         height:30%;
+         }
+        #cta{
+         background-color:pink;
+         margin:1px 0 0 0;
+
+         }
+         .text4{
+         font-family:'Lobster',cursive;
+         margin-top:40px;
+         height:30%;
+         color:white;
+         }
+         .sim{
+         background-color:lightyellow;
+         }
+        </style>
+  <body class="sim">
+    <nav class="navbar fixed-top navbar-light" id="cta">
+     <div class="container">
+   <a class="text2 navbar-brand" href="#"></i> Smart Blog</a>
+          <ul class="nav navbar-nav navbar-right">
+              <li><h2 class="text4">For the child who communicates</h2></li>
+          </ul>
+
+     </div>
+    </nav>
+    <div class = "row">
+             <div class ="col-md-1">
+             </div>
+
+             <div class="col-md-1">
+             </div>
+             <div class ="col-md-4">
+              <br>
+                 <form class="form-horizontal" method="POST">
+                 {% csrf_token %}
+                 <div class="form-group">
+
+                 </div><br>
+                     <br>
+                     <br>
+                     <h1 class="text">Successfully signed up! Please continue to login!</h1>
+                     <button class="btn btn-default"><a href="/login/" class="text5">Login</a></button></div>
+                 </form>
+             </div>
+  </body>
+ </html>
